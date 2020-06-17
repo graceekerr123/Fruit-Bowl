@@ -41,6 +41,7 @@
 					<li><a href="#sprint1">Sprint 1:</a></li>
 					<li><a href="#sprint2">Sprint 2:</a></li>
 					<li><a href="#sprint3">Sprint 3:</a></li>
+                    <li><a href="#sprint4">Sprint 4:</a></li>
 				</ul>
 			</div>
 			<div class="content">
@@ -51,18 +52,27 @@
                 <h3>Aim:</h3>
                 <p>To make a basic programme to print out the contents of the fruit bowl and has a function</p>
                 
-                <h3>Screenshot of the Output:</h3>
+                <h3>Final Output: (screenshot)</h3>
                 <img class="img-responsive" src="assets/img/sprin1_output.png" alt="This is the output for sprint 1">
                 
                 <h3>Reflection:</h3>
                 <p>I thought that this first sprint was sucessful and was done in a timely manner. The review function worked well. However the major problem with this sprint is that the user couldn't make their own fruit bowl list, or add/delete the fruit from it. This is a big problem which i'll focus on in other prints.</p>
                 
                 
-                <hr>
+                
+                
+                
+                
+                <br><hr>
 <h1 id="sprint2">Sprint Two:</h1>
                 <h3>Aim:</h3>
 <p>To be able to add a new fruit and the quantity of it at the beginning of the programme.</p>
 
+                <h3>Final Output: (screenshot)</h3>
+                <img class="img-responsive" src="assets/img/sprint2output.png" alt="This is the output for sprint 2">
+                <br>
+                
+                
             <h3> Planning:</h3>
                 <img class="img-responsive" src="assets/img/sprint2_plan.jpg" alt="This is the planning for version 2">
                 <br>
@@ -72,47 +82,283 @@
                 
                 <br>
                 
-                <h3>Reflection:</h3>
-                <p>The changes I made from sprint one to sprint two is that I made my code more specific to the task. I changed 'my_list' to 'fruit_list' - this caused a few problems as I also had to change the arguments in the functions to make sure it linked to the new list instead of the old list.</p>
-                <br>
-                <p>Other problems I came across was that if the user wanted to add more fruit, to fill the fruit bowl, 
-                    
-                    
-                    
-                
-                </p>
-                
+            
+            <h3>Iterative Decision:</h3>    
                 <div class="col-container">
                     <div class="col">
-                    
-                        <p>hey</p>
-                    </div>
+                        <h3>Option 1:</h3>
+                        <p>Since I wanted to make sure that users could add more fruit when they fill the bowl at the beginning. The first option is to: put the code to ask if the user want to fill the bowl with more fruit in the 'menu' function. I thought this was a good idea because then because I could put before the menu, which makes it easier to see what the layout of the main function is. However, I do think that this is a bad option because it will make the menu function (main function) too long, while it could be more efficient.</p>
+                        
+                        <img class="img-responsive" src="assets/img/option1code.png" alt="code for option 1">
+                        <br>
+                        <img class="img-responsive" src="assets/img/option1output.png" alt="output for option 1">
+                        
+                        
+                        
+                            </div>
                 
                     <div class="col">
-                    
-                    <p>hi2</p>
+                        <h3>Option 2:</h3>
+                    <p>In option 2, i put the code about asking the user to fill the bowl wih more fruit in the 'fill_a_fruit_bowl' function. I thought that this was a better option that option 1 because it made sure that the code was more efficient and easier to add to in the future. This is because it doesn't make the menu function all confusing - which would make it harder to test to spot errors. </p>
+                        
+                        <img class="img-responsive" src="assets/img/option2code.png" alt="code for option 2">
+                        <br>
+                        <img class="img-responsive" src="assets/img/option2output.png" alt="output for option 2">
+                        
+                      
                     </div>
-                
-                
-                
                 </div>
                 
+                <h3>Problems:</h3>
+                <p> <b> Problem 1:</b></p>
+                <img class="img-responsive"src="assets/img/sprint2problem1.png" alt="This is the first problem for sprint 1"><br>
+                <p> (NOTE: This is for option 1) The problem with this code is that I stated that the program should repeat the 'filla fruit bowl' function if the user enters 'yes'. However since this is in a loop, it would cause the 'fill_a_fruit_bowl' function twice, once when they answer is yes and a second time when the the loop starts again. To fix this i took out the option of 'yes', so only the option of 'no' - therefore the 'filla fruit bowl' function one happens once per loop.</p>
+                
+                <br><br>
+             <h3>Reflection:</h3>
+                <p>The changes I made from sprint one to sprint two is that I made my code more specific to the task. I changed 'my_list' to 'fruit_list' - this caused a few problems as I also had to change the arguments in the functions to make sure it linked to the new list instead of the old list.</p>
+                <br>
+                <p>Other problems I came across was that if the user wanted to add more fruit, to fill the fruit bowl, </p>
+                    
+                    
                 
                 
                 
+                
+                
+                
+                
+                <br><hr>
+<h1 id="sprint3">Sprint Three:</h1>
+
+                <h3>Aim:</h3>
+                <p>To update quanity of fruit currently in the fruit bowl</p>
+                
+                 <h3>Final Output: (screenshot)</h3>
+                <img class="img-responsive"src="assets/img/sprint3output.png" alt="This is the the final output shown for sprint 4">
+                
+            
+                <br>
+                <h3> Planning:</h3>
+                <img class="img-responsive" src="assets/img/sprint3_plan.jpg" alt="This is the planning for sprint 3">
+                <br>
+                
+                <h3> Kanban: </h3>
+                <img class="img-responsive" src="assets/img/kanban3.png" alt="This is the kanban for sprint 3">
+                
+                <br>
+                
+                
+                <h3>Problems:</h3>
+                <ol>
+                        <li>Unexpected text</li>
+                    <li>Removing 5 apples when you only have 2</li>
+						<li>Entering strings for integer</li>
+						<li>Entering an empty string</li>
+						<li>Entering the same fruit twice</li>
+						<li>If you enter the singluar or plural of the fruit</li>
+                        <li>If you enter a space before or after the fruit</li>
+					</ol>
+                
+                
+                 <h3> <b> Problem 1:</b></h3>
+                <div class="col-container">
+                    <div class="col">
+                        <h3>Before:</h3>
+    
+                        <img class="img-responsive" src="assets/img/sprint3before.png" alt="output for problem 1">
+                        <br>
+                        <img class="img-responsive" src="assets/img/beforee.png" alt="problem code for problem 1">
+                        
+                            </div>
+                
+                    <div class="col">
+                        <h3>After:</h3>
+        
+                        <img class="img-responsive" src="assets/img/afterr.png" alt="code for problem 1">
+                        <br>
+                         <img class="img-responsive" src="assets/img/aa.png" alt="fixed code for problem 1">
+                         
+                    </div>
+                </div>
+                <p>Using 'elif' instead of 'if' guarentees that only one condidtion gets excuceted. So before my problem was that the progamme tested it more than necessary. So now it tested the if's separately to the rest of the conditions, that's why it was able tow work properly</p>
+                
+                <br><br><br>
+                
+                 <h3> <b> Problem 2: (Validations) </b></h3>
+                <div class="col-container">
+                    <div class="col">
+                        <h3>Before:</h3>
+    
+                        <img class="img-responsive" src="assets/img/problem2code.png" alt="output for problem 2">
+                        <br>
+                        
+                            </div>
+                
+                    <div class="col">
+                        <h3>After:</h3>
+        
+                    </div>
+                </div>
+                <p>This problem is that you can delete more fruit than possible. This is a problem because you can't have negative fruit.</p>
+                
+                <br><br><br>
+                
+                 <h3> <b> Problem 3: (Validations) </b></h3>
+                <div class="col-container">
+                    <div class="col">
+                        <h3>Before:</h3>
+    
+                        <img class="img-responsive" src="assets/img/problem3code.png" alt="output for problem 3">
+                        <br>
+                        
+                            </div>
+                
+                    <div class="col">
+                        <h3>After:</h3>
+        
+                    </div>
+                </div>
+                <p>This problem is that the code won't accept a number in words like 'seven' when in real life it's considered the same as 7, the integer.</p>
+                
+                  <br><br><br>
+                
+                
+                
+                 <h3> <b> Problem 4: (Validations) </b></h3>
+                <div class="col-container">
+                    <div class="col">
+                        <h3>Before:</h3>
+    
+                        <img class="img-responsive" src="assets/img/problem4code.png" alt="output for problem 4">
+                        <br>
+                        
+                            </div>
+                
+                    <div class="col">
+                        <h3>After:</h3>
+        
+                    </div>
+                </div>
+                <p>This problem is that when you enter a empty string, it will accept this as a item/fruit to add to the list when it's just a mistake.</p>
+                
+                    <br><br><br>
+                
+                
+                
+                      <h3> <b> Problem 5: (Validations) </b></h3>
+                <div class="col-container">
+                    <div class="col">
+                        <h3>Before:</h3>
+    
+                        <img class="img-responsive" src="assets/img/problem5code.png" alt="output for problem 5">
+                        <br>
+                        
+                            </div>
+                
+                    <div class="col">
+                        <h3>After:</h3>
+        
+                    </div>
+                </div>
+                <p>This problem is the programe won't recogonise if the user adds a repeated fruit, so they add apples twice. This is very bad because then they'll have the wrong number of apples wrong in the system.
+                <br>
+                So I need to improve the way new fruit is added to the bowl. The problem at the moment is the same fruit can be added repetedly without the program recognising that is the same fruit. This could be fixed by updating the quantity of the fruit which I did in sprint 3, but I could still enter two sets of the same fruit while filling up my fruit bowl at the beginning.</p>
+                
+                
+                <br><br><br>
+                
+                
+                
+                      <h3> <b> Problem 6: (Validations) </b></h3>
+                <div class="col-container">
+                    <div class="col">
+                        <h3>Before:</h3>
+    
+                        <img class="img-responsive" src="assets/img/problem6code.png" alt="output for problem 6">
+                        <br>
+                        
+                            </div>
+                
+                    <div class="col">
+                        <h3>After:</h3>
+        
+                    </div>
+                </div>
+                <p>This problem is the programe won't recogonise if the fruit is a plural or singlular. This is bad because the grammar and correct english of this is extremely bad for the user to read.</p>
                 
                 
                 
                 
                 <br><br>
-<h1 id="sprint3">Sprint Three:</h1>
+                 <h3>Iterative Decision:</h3> 
+                
+              
+                
+                <br><br>
+                
+                
+                
+             <h3>Reflection:</h3>
+                <p>Some changes I made from sprint 2 to 3 was that I allowed the user of this update the fruit list for their own fruit and their own quantities. While doing this, I needed to add update the fruit as part of  the menu that the user can chose from - so I did this. Interestingly I also had to make another function 'print_with_index' to make sure I could print the fruit list with indexes when I have to ask the progam user what fruit they want to update - which can only be done when relating it back to the fruit.</p>
+                
+                
+                 <br><hr>
+<h1 id="sprint4">Sprint Four:</h1>
 
- <hr>
- <hr>
+                <h3>Aim:</h3>
+                <p></p>
+                
+                 <h3>Final Output: (screenshot)</h3>
+                <img class="img-responsive"src="assets/img/sprint4finaloutput.png" alt="This is thefinal output for sprint 4">
+                
+            
+                <br>
+                <h3> Planning:</h3>
+                <img class="img-responsive" src="assets/img/sprint4_plan.jpg" alt="This is the planning for sprint 4">
+                <br>
+                
+                <h3> Kanban: </h3>
+                <img class="img-responsive" src="assets/img/kanban4.png" alt="This is the kanban for sprint 4">
+                
+                <br>
+                
+                
+                <h3>Problems:</h3>
+                
+                <br>
+                
+                 <h3>Iterative Decision:</h3>    
+                
+                <br>
+                
+                 <h3>Reflection:</h3>    
+                
+                
+                <br><br><br><br>
+                 <br><br><br><br><br><br>
+                
+                
+ 
+
+                
+               
+              
+                
+                <br><br>
+               
                 
                 
                 
+                 
                 
+                <br><br><br><br><br><br>
+                 <br><br><br><br><br><br><br><br><br><br><br><br>
+                 <br><br><br><br><br><br><br><br><br><br><br><br>
+                 <br><br><br><br><br><br><br><br><br><br><br><br>
+                 <br><br><br><br><br><br>
+                
+                  <br><br><br><br><br><br>
                 <h3> THIS IS NOT IN THE PLANNING WEBSITE: but it is needed to be updated every sprint</h3>
                 <h3>Backlog:</h3>
                 <p>Improve the way new fruit is added to the bowl. The problem at the moment is the same fruit can be added repetedly without the program recognising that is the same fruit. This could be fixed by updating the quantity of the fruit.</p>

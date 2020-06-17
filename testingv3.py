@@ -1,4 +1,6 @@
-from testingvalidations import validate_integer
+def get_integer(m):
+    my_integer=int(input(m))
+    return my_integer
 
 def get_string(m):
     my_string=input(m)
@@ -12,11 +14,11 @@ def review(F):
 
 
 def fill_a_fruit_bowl(F):
-    print("You will now add fruit to your fruit bowl")
+    print("Please fill your bowl")
     run = True
     while run:
         type_fruit = get_string("What fruit do you want to add? -> ")
-        quantity_fruit = validate_integer("What quantity of fruit to add? -> ", 0, 50, "Your entry is too small", "Your entry is too big")
+        quantity_fruit = get_integer("What quantity of fruit to add? -> ")
         temp_list = [type_fruit, quantity_fruit]
         F.append(temp_list)
         output = "You have added {} {}".format(quantity_fruit,type_fruit)
@@ -25,7 +27,6 @@ def fill_a_fruit_bowl(F):
         if more_fruit == "no":
             print("You can now look at fruit list menu. Thank you.")
             run = False
-
 
 
 def print_with_indexes(F):
@@ -40,19 +41,19 @@ def update_fruit(F):
         print("There is nothing in your fruit bowl")
         return None
     print_with_indexes(F)
-    chosen_index = validate_integer("Please chose the index number of the fruit you want to change: -> ", 0, len(F), "The chosen index isn't part of the list", "The chosen index isn't part of the list")
+    chosen_index = get_integer("Please chose the index number of the fruit you want to change: -> ")
     output = "You have chosen {} fruit".format(F[chosen_index][0])
     print(output)
     add_or_subtract = get_string("Would you like to add or subtract this fruit? -> ")
     if add_or_subtract == "add":
-        adding = validate_integer("How many of this fruit do you want to add? -> ", 1, 50, "You can't not add negative fruit", "The fruit bowl cannot contain this much fruit")
+        adding = get_integer("How many of this fruit do you want to add? -> ")
         F[chosen_index][1] += adding
         output = "You have added {} {} to your {} total".format(adding, F[chosen_index][0], F[chosen_index][0])
         print(output)
         output = "You now have {} {}".format(F[chosen_index][1], F[chosen_index][0])
         print(output)
     if add_or_subtract == "subtract":
-        subtract = validate_integer("How many of this fruit do you want to subtract? -> ", 1, F[chosen_index][1], "You can't not subtract negative fruit", "The fruit cannot be in negative numbers")
+        subtract = get_integer("How many of this fruit do you want to subtract? -> ")
         F[chosen_index][1] -= subtract
         output = "You have subtracted {} {} from your {} total".format(subtract, F[chosen_index][0], F[chosen_index][0])
         print(output)
@@ -61,14 +62,22 @@ def update_fruit(F):
 
 
 def menu():
-    fruit_list = []
-    fill_a_fruit_bowl(fruit_list)
+    #fruit_list = []
+
+    fruit_list = [
+        ["Orange", 2],
+        ["Raspberries", 35],
+        ["Apple", 5],
+        ["Blueberries", 220]
+    ]
+
+    #fill_a_fruit_bowl(fruit_list)
 
     my_menu = '''
-            U: Update
-            R: Review
-            Q: Quit
-            '''
+        U: Update
+        R: Review
+        Q: Quit
+        '''
 
     run = True
     while run == True:

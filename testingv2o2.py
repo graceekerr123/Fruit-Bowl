@@ -32,7 +32,7 @@ def fill_a_fruit_bowl(F):
 def menu():
     fruit_list =[]
 
-
+    fill_a_fruit_bowl(fruit_list)
 
     my_menu = '''
         R: Review

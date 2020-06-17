@@ -1,5 +1,8 @@
 from testingvalidations import validate_integer
 
+#test = validate_integer("hi, please enter a number", 0 ,10)
+#print(test)
+
 def get_string(m):
     my_string=input(m)
     return my_string

@@ -30,11 +30,11 @@ def menu():
     while run == True:
         fill_a_fruit_bowl(fruit_list)
         more_fruit = get_string("CONTINUE TO ADD? (yes/no) -> ")
-        if more_fruit == "yes":
-            fill_a_fruit_bowl(fruit_list)
         if more_fruit == "no":
             print("You can now look at fruit list menu. Thank you.")
             run = False
+        else:
+            print("This is not valid")
 
     my_menu = '''
         R: Review
